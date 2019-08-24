@@ -20,6 +20,7 @@ $(".add-site-container").hide();
 $(".save-site-icon").hide();
 
 $("#addSiteIcon").click(() => {
+$("#jsonSiteDataTextArea").attr('rows', 30);
   toggleElements();
 });
 
@@ -38,6 +39,7 @@ $("#saveSiteIcon").click(() => {
       });
     }
   );
+$("#jsonSiteDataTextArea").attr('rows', 5);
   toggleElements();
 });
 
