@@ -18,5 +18,5 @@
   "background": {
     "scripts": ["lib/jquery-3.4.1.min.js", "static/js/script.js"]
   },
-  "permissions": ["activeTab", "bookmarks", "storage"]
+  "permissions": ["storage"]
 }
