@@ -13,8 +13,6 @@
   <br>
   <br>
   <a href="https://github.com/ankitverma31/quick-launcher/issues/new?template=bug.md">Report bug</a>
-  ·
-  <a href="https://github.com/ankitverma31/quick-launcher/new?template=feature.md&labels=feature">Request feature</a>
 </p>
 
 <br/>
