@@ -1,9 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Quick Launcher",
-  "description": "A chrome extension to quickly access sites/products/tools deployed in different environments(UAT, Staging, Production). You can add deployment url's of various sites/tools to quickly access them.",
+  "description": "A chrome extension to quickly access sites/products/tools deployed in different environments(UAT, Staging, Production).",
   "version": "1.0.0",
-  "default_locale": "en",
   "icons": {
     "16": "static/img/icon_16x16.png",
     "48": "static/img/icon_48x48.png",
