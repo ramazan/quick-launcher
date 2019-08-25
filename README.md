@@ -76,3 +76,10 @@
 
 ## Limitations:
     Currently supports 3 url's per site.
+
+<br/>
+
+## Future scope:
+* Change cards color(theme support)
+* List of sites/tools useful for developers
+* Handling more than 3 environments per site
