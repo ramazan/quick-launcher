@@ -9,7 +9,7 @@
 <p align="center">
   Quickly access url's of various deployed(UAT, Staging, Production) apps
   <br>
-  <a href="#"><strong>Add this extension »</strong></a>
+  <a href="https://chrome.google.com/webstore/detail/quick-launcher/ejfnjjfimjllfmeohacobipgepnilapm" target="_blank"><strong>Add this extension »</strong></a>
   <br>
   <br>
   <a href="https://github.com/ankitverma31/quick-launcher/issues/new?template=bug.md">Report bug</a>
