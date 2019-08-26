@@ -17,6 +17,11 @@
 
 <br/>
 
+## Status:
+![GitHub manifest version](https://img.shields.io/github/manifest-json/v/ankitverma31/quick-launcher?style=plastic)
+![GitHub](https://img.shields.io/github/license/ankitverma31/quick-launcher?style=plastic)
+
+<br/>
 
 ## Functionalities:
 * Add JSON config
