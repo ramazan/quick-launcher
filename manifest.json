@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Quick Launcher",
   "description": "Quickly access apps deployed in different environments(UAT, Staging, Production). You can add deployment url's of various apps.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icons": {
     "16": "static/img/icon_16x16.png",
     "48": "static/img/icon_48x48.png",
