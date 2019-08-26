@@ -78,7 +78,8 @@
 <br/>
 
 ## Future scope:
-* Change cards color(theme support)
+* Ability to modify cards color(theme support)
+* Add test cases
 * List of sites/tools useful for developers
 * Drag and drop cards
 * Handling more than 3 environments per site
