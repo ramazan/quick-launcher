@@ -1,26 +1,101 @@
 :root {
-    --primary-color: #0046bb; 
+  --primary-color: #0046bb;
 }
 
-/* Modal Structure */
-html,
-body {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 14px;
+/* -------------------- Resets --------------------- */
+body,
+form,
+fieldset,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  min-height: 180px;
   padding: 0;
 }
-body {
-  width: 422px;
+img {
+  border: 0; /* kills Gecko bug when img's are placed inside links */
+  vertical-align: bottom; /* set vertical align to bottom for IE */
 }
-
-h1 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
+/* ------------------- Defaults ------------------- */
+html {
+  height: 100%;
+  overflow: auto; /* triggers 100% height in Opera 9.5 */
+  overflow-y: scroll; /* creates a horizontal scrollbar, for a more consistent look & feel */
+}
+body {
+  height: auto; /* helps make height 100% */
+  font: 100%/1.5 'IBM Plex Sans', sans-serif; /* 100% = 16px, 93.75% = 15px, 87.5% = 14px, 81.25% = 13px, 75% = 12px - font-size in % prevents IE's resize bug */
+  min-width: 400px;
+  min-height: 180px;
+  overflow-x: hidden;
+  font-size: 8pt !important;
+}
+/* ------------------ Typography ------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
-  color: #2f5876;
+}
+p,
+ul,
+ol {
+  font-size: 1em;
+}
+ul {
+  margin: 0 0 1em 25px;
+  list-style: none;
+}
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.1em;
+}
+/* -------------------- Forms ---------------------- */
+fieldset {
+  border: none;
+}
+form :focus {
+  outline: 0; /* removes Safari's blue border */
+}
+input,
+select,
+textarea {
+  font-size: 1em;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+label {
+  cursor: pointer;
+  vertical-align: middle;
+}
+input {
+  vertical-align: middle;
+}
+textarea {
+  overflow: auto; /* removes scrollbar from IE when none is needed */
 }
 
 a:link,
@@ -30,16 +105,29 @@ a:visited {
   text-decoration: none;
 }
 
-img {
-  width: 30px;
-}
-
+/* -------------------- Modal Header ---------------------- */
 .modal-header {
   align-items: center;
   border-bottom: 0.5px solid #dadada;
   padding: 10px;
 }
 
+.logo-icon {
+  width: 1.6em;
+}
+
+.logo-title {
+  color: #2f5876;
+  font-size: 1.2em;
+}
+
+.version {
+  color: #444;
+  font-size: 0.5em;
+  font-family: 'IBM Plex Sans', monospace;
+}
+
+/* -------------------- Modal Cntent ---------------------- */
 .modal-content {
   padding: 10px;
 }
@@ -64,20 +152,20 @@ img {
 }
 
 .add-site-icon:hover {
-  color: var( --primary-color);
+  color: var(--primary-color);
 }
 .save-site-icon:hover {
   color: green;
 }
 
 .logo {
-  padding: 16px;
+  padding: 8px;
 }
 .error {
   color: #f44336;
 }
 .no-site {
-  font-size: 18px;
+  font-size: 1.4em;
   font-weight: bold;
   margin: 15px;
 }
@@ -86,15 +174,10 @@ img {
   margin-right: 12px;
 }
 
-.version {
-  color: #444;
-  font-size: 10px;
-  font-family: "IBM Plex Sans", monospace;
-}
-
 .cards-container {
   padding: 0;
   margin: 0;
+  width: 418px;
   list-style: none;
   border: 1px solid silver;
   -ms-box-orient: horizontal;
@@ -117,8 +200,8 @@ img {
 
 .flip-card {
   perspective: 1000px;
-  width: 80px;
-  height: 80px;
+  width: 7em;
+  height: 7em;
   margin: 10px;
   border-radius: 8px;
 
@@ -134,7 +217,8 @@ img {
   text-align: center;
   transition: transform 0.3s ease-out;
   transform-style: preserve-3d;
-  box-shadow:0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12)
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -151,15 +235,15 @@ img {
 }
 
 .flip-card-front {
-  background-color: var( --primary-color);
+  background-color: var(--primary-color);
   color: white;
-  line-height: 80px;
+  line-height: 7em;
   font-weight: bold;
 }
 
 .flip-card-back {
   background-color: #ffffff;
-  color: var( --primary-color);
+  color: var(--primary-color);
   transform: rotateY(180deg);
   display: flex;
   -webkit-flex-direction: column;
@@ -168,12 +252,10 @@ img {
 }
 
 .environment {
-  margin: 4px;
-  font-size: 10px;
-  padding: 2px;
+  margin: 3px;
   border-radius: 8px;
-  border: 1px solid var( --primary-color);
-  color: var( --primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   font-weight: bold;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
@@ -181,6 +263,6 @@ img {
 
 .environment:hover {
   color: white;
-  background: var( --primary-color);
+  background: var(--primary-color);
   transition: all 0.2s ease-in-out;
 }
