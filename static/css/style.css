@@ -32,7 +32,7 @@ html {
 body {
   height: auto; /* helps make height 100% */
   font: 100%/1.5 'IBM Plex Sans', sans-serif; /* 100% = 16px, 93.75% = 15px, 87.5% = 14px, 81.25% = 13px, 75% = 12px - font-size in % prevents IE's resize bug */
-  min-width: 400px;
+  min-width: 350px;
   min-height: 180px;
   overflow-x: hidden;
   font-size: 8pt !important;
@@ -84,7 +84,7 @@ form :focus {
 input,
 select,
 textarea {
-  font-size: 1em;
+  font-size: 1.3em;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 label {
@@ -135,8 +135,8 @@ a:visited {
   padding: 0 10px 10px 0px;
 }
 .subtitle {
-  font-size: 1em;
-  line-height: 1.9em;
+  font-size: 1.35em;
+  line-height: 1em;
 }
 .add-site-icon,
 .save-site-icon {
@@ -146,7 +146,7 @@ a:visited {
 }
 
 .go-back-icon {
-  font-size: 1em;
+  font-size: 1.5em;
   margin-right: 4px;
   cursor: pointer;
 }
@@ -177,7 +177,7 @@ a:visited {
 .cards-container {
   padding: 0;
   margin: 0;
-  width: 418px;
+  width: 380px;
   list-style: none;
   border: 1px solid silver;
   -ms-box-orient: horizontal;
@@ -196,6 +196,10 @@ a:visited {
   color: white;
   font-size: 14px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 2px;
 }
 
 .flip-card {
