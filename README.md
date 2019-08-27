@@ -20,6 +20,9 @@
 ## Status:
 ![GitHub manifest version](https://img.shields.io/github/manifest-json/v/ankitverma31/quick-launcher?style=plastic)
 ![GitHub](https://img.shields.io/github/license/ankitverma31/quick-launcher?style=plastic)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/v/ejfnjjfimjllfmeohacobipgepnilapm?style=plastic)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/users/ejfnjjfimjllfmeohacobipgepnilapm?style=plastic)
+![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/ejfnjjfimjllfmeohacobipgepnilapm?style=plastic)
 
 <br/>
 
