@@ -121,13 +121,20 @@ function initializeCards(sitesConfig) {
         '"></div></div></div>'
     );
     Object.keys(siteConfig).forEach(environment => {
-      $("." + site).append(
-        "<a href=" +
-          siteConfig[environment] +
-          " target=_blank><p class=environment>" +
-          environment +
-          "</p></a>"
-      );
+      /** adding click events for each environment */
+      var env = $("<p class=environment></p>").text(environment).click(()=>{
+        openNewTab(siteConfig[environment]);
+      });
+      /** appending environment to the site */
+      $("." + site).append(env);
     });
   });
+}
+
+/**
+ * @description Opens the provided url in new tab 
+ * @param {string} url - environment url
+ */
+function openNewTab(url) {
+  chrome.tabs.create({ url: url, active: true });
 }
