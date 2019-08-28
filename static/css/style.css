@@ -257,6 +257,7 @@ a:visited {
 
 .environment {
   margin: 3px;
+  cursor: pointer;
   border-radius: 8px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
