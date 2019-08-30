@@ -13,10 +13,11 @@
       "19": "static/img/icon_19x19.png",
       "38": "static/img/icon_38x38.png"
     },
-    "default_popup": "index.html"
+    "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["lib/jquery-3.4.1.min.js", "static/js/script.js"]
+    "scripts": ["lib/jquery-3.4.1.min.js", "static/js/popup.js", "static/js/analytics.js"]
   },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "permissions": ["storage"]
 }
