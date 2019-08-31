@@ -198,7 +198,7 @@ a:visited {
 
 .flip-card {
   perspective: 1000px;
-  width: 7em;
+  width: 10em;
   height: 7em;
   margin: 10px;
   border-radius: 8px;
@@ -250,6 +250,7 @@ a:visited {
 }
 
 .environment {
+  font-size: 11px;
   margin: 3px;
   cursor: pointer;
   border-radius: 8px;
